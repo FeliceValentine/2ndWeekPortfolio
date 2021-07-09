@@ -1,0 +1,282 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Yellowtail&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    cursor:crosshair;
+}
+
+h1,h2,h3 {
+    font-family: 'Yellowtail', monospace;
+    color: #fff;
+    text-shadow: 1px 0.5px #999;
+}
+    
+p {
+    color:#fff;
+    text-shadow: 1px 0.5px #999;
+    font-size: 1.15rem;
+}
+
+p:hover {
+    color:#666;
+    text-shadow: 1px 0.5px #999;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Navbar */
+    
+.hamburger {
+    display: none;
+}
+    
+nav {
+    background-color:#ffafcc;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+    
+.menu a {
+    padding: 0.5rem;
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+    
+a:link {
+    color: #fff;
+    text-shadow: 1px 0.5px #999;
+}
+    
+a:visited {
+    color: #333;
+}
+    
+a:hover {
+    color: #a2d2ff;
+}
+
+a:active {
+    color: #cdb4db;
+}
+
+
+/*   Header  */
+    
+header {
+    height: 75vh;
+    background-color: #ffafcc;
+}
+    
+header h1,h2 {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: 'Yellowtail', monospace;
+    letter-spacing: -1px;
+    color: #ffffff;
+    text-shadow: 1.5px 0.5px #999;
+}
+    
+header h2 {
+     font-size: 1.75rem;
+}
+    
+.textanimation {
+    position: relative;
+    display: grid;
+    top: 45%;
+    width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+    
+.typewriter {
+    animation: typewriter 2s steps(55) 1s 1 normal both;
+}
+    
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50vw;
+    }
+}
+    
+.typewriter2 {
+    animation-delay: 1.5s;
+}
+.typewriter3 {
+    animation-delay: 1.7s;
+}
+.typewriter4 {
+    animation-delay: 2s;
+}
+
+
+
+/*   Pages   */
+    
+#aboutMe {
+    background-color: #ffc8dd;
+}
+#coding {
+    background-color: #cdb4db;
+}
+#why {
+    background-color: #a2d2ff;
+}
+#week1 {
+    background-color: #bde0fe;
+}
+
+#aboutMe, #coding, #why, #week1 {
+    
+    border-top: #ffffff 2px solid;
+    padding-bottom: 3rem;
+}
+
+#aboutMe h3, #coding h3, #why h3, #week1 h3 {
+    margin: 2rem;
+    font-size: 2rem;
+} 
+
+#coding, #why, #week1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutMe img {
+    border-radius: 100%;
+    margin: 5rem 3rem 1rem 5rem;
+}
+
+.cats {
+    display: flex;
+    justify-content: center;
+}
+
+.cinnamon, .freya {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutMe img:hover{
+    scale: 1.2;
+}
+
+
+#aboutMe p , #why p , #coding p{
+    max-width: 75%;
+    margin:auto;
+    line-height: 2.5rem;
+}
+
+#week1 {
+    justify-content: space-around;
+}
+
+#week1 li {
+    list-style:inside;
+    font-size: 1.5rem;
+    margin: 3rem;
+    color: #fff;
+    text-shadow: 1px 0.5px #999;
+}
+
+#week1 li:hover{
+    color:#ffafcc;
+}
+
+#week1 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #3888f7;
+    text-shadow: 1px 0.5px #000;
+}
+    
+@media only screen and (max-width: 875px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+    }
+    .menu.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger {
+        display: block;
+        background: none;
+    }
+
+    header h1 {
+        font-size: 2.25rem;
+    }
+
+    header h2{
+        font-size: 1.5rem;
+    }
+
+
+    p {
+        font-size: 1rem;
+    }
+
+    .cats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2{
+        font-size: 1.5rem;
+    }
+    #aboutMe p , #why p , #coding p{
+        max-width: 90%;
+        line-height: 1.75rem;
+    }
+
+    #week1 li {
+        font-size: 1.2rem;
+    }
+
+    #week1 a {
+        font-size: 1.35rem;
+    }
+}
