@@ -14,19 +14,19 @@ body {
 h1,h2,h3 {
     font-family: 'Yellowtail', monospace;
     color: #fff;
-    text-shadow: 1px 0.5px #999;
+    text-shadow: 1px 0.5px #7F7E7E;
 }
     
 p {
     color:#fff;
-    text-shadow: 1px 0.5px #999;
+    text-shadow: 1px 0.5px #7F7E7E;
     font-size: 1.15rem;
     letter-spacing: 1.2px;
 }
 
 p:hover {
     color:#666;
-    text-shadow: 1px 0.5px #999;
+    text-shadow: 1px 0.5px #7F7E7E;
 }
 
 
@@ -65,7 +65,7 @@ nav {
     
 a:link {
     color: #fff;
-    text-shadow: 1px 0.5px #999;
+    text-shadow: 1px 0.5px #7F7E7E;
 }
     
 a:visited {
@@ -205,7 +205,7 @@ header h2 {
     font-size: 1.5rem;
     margin: 3rem;
     color: #fff;
-    text-shadow: 1px 0.5px #999;
+    text-shadow: 1px 0.5px #7F7E7E;
 }
 
 #week1 li:hover{
