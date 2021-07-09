@@ -21,6 +21,7 @@ p {
     color:#fff;
     text-shadow: 1px 0.5px #999;
     font-size: 1.15rem;
+    letter-spacing: 1.2px;
 }
 
 p:hover {
